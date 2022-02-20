@@ -1,0 +1,298 @@
+/* ==========================================================================
+
+	Dark Brown 		rgb(96,58,21)
+	// Mid Brown 		#9a5f14
+	// Light Brown 	#d39a62
+	Beige 			#C9A173
+	 - Darkmode		#D49C63
+
+	Grey        	#585858
+	 - Darkmode		#aaa
+
+	Heading 		font-family: 'Maven Pro', sans-serif;
+	Body			'Open Sans', sans-serif;
+
+   ========================================================================== */
+
+html, body { 
+	margin: 0;
+	padding: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+	html, body {
+		background-color: rgb(28,28,30);
+	}
+}
+
+/* ============== TYPOGRAPHY ============== */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	line-height: 1.6;
+}
+
+/* ----------------- HEADINGS ----------------- */
+
+h1, h2, h3 {
+	font-family: 'Maven Pro', sans-serif;
+	line-height: 1.3;
+}
+
+h1, h2 {
+	color: rgb(96,58,21);
+	font-weight: 400;
+}
+
+@media (prefers-color-scheme: dark) {
+	h1, h2 {
+		color: #D49C63;
+	}
+}
+
+h1 {
+	font-size: 24px;
+	margin: 0 16px 24px;
+}
+
+h2 {
+	-webkit-font-smoothing: antialiased;
+	font-size: 18px;
+	margin: 0 8px 24px;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 0;
+}
+
+@media (min-width: 520px) {
+	h1 {
+		font-size: 32px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+}
+
+/* ----------------- GENERAL p, blockquotes & a ----------------- */
+
+p {
+	color: #585858;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0 0 16px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	p {
+		color: #aaa;
+	}
+}
+
+b,
+strong {
+	font-weight: 600;
+	color: rgb(96,58,21);
+}
+
+a {
+	color: #C9A173;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #C9A173;
+	text-decoration: underline;
+}
+
+a:focus {
+	color: #C9A173;
+	text-decoration: underline;
+	outline: 2px solid rgb(96,58,21);
+}
+
+@media (prefers-color-scheme: dark) {
+	h3 {
+		color: rgb(182, 182, 182);
+	}
+
+	b,
+	strong {
+		color: #D49C63;
+	}
+
+	a:focus {
+		outline: 2px solid #D49C63;
+	}
+}
+
+.button {
+	background: rgb(96,58,21);
+	border-radius: 3px;
+	border: 1px solid #9a5f14;
+	color: #fff;
+	display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button:hover {
+	background: #9A5F15;
+	color: #fff;
+}
+
+/* -------------- LISTS -------------- */
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+	margin: 0 0 16px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+	color: #585858;
+	font-weight: 100;
+	padding-left: 32px;
+}
+
+@media (prefers-color-scheme: dark) {
+	menu,
+	ol,
+	ul {
+		color: #aaa;
+	}
+}
+
+li {
+	margin: 0 0 8px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+	list-style: none;
+	list-style-image: none;
+}
+
+/* ============== LAYOUT ============== */
+
+.wrap {
+	margin: 0 auto;
+	max-width: 600px; 
+	padding: 16px;
+}
+
+.content-wrapper {
+	border-bottom: 3px solid #C9A173;
+	border-top: 3px solid #C9A173;
+	margin-bottom: 16px;
+	width: 100%;
+}
+
+.content-section {
+	margin-top: 32px;
+}
+
+footer :last-child {
+	margin-bottom: 0;
+}
+
+.content-block {
+	margin: 0 16px 32px; 
+}
+
+@media (min-width: 520px) {
+	.content-block {
+		margin: 0 32px 32px;
+	}
+}
+
+
+/* -------------- HEADER -------------- */
+
+header {
+	display: block;
+	text-align: center;
+}
+
+.header-image-wrapper {
+	display: block;
+	margin: 16px auto;
+	max-width: 150px;
+	max-height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 5px solid #C9A173;
+}
+
+@media (min-width: 520px) {
+	.header-image-wrapper {
+		max-width: 200px;
+		max-height: 200px;
+	}
+}
+
+.header-image {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* -------------- CONTENT -------------- */
+
+/* CONTACT */
+
+.contact-info {
+	align-items: center;
+	display: flex;
+	font-family: 'Maven Pro', sans-serif;
+	justify-content: space-between;
+	padding: 0;
+	text-align: center;
+}
+
+.contact__method {
+	align-self: center;
+	list-style-type: square;
+	list-style: none;
+	margin: 0;
+}
+
+.contact-info a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/* -------------- FOOTER -------------- */
+
+footer {
+	margin: 0 auto;
+}
