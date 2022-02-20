@@ -1,2 +1,2 @@
-# lackofcolours_art
+# Lack of Colours art
 Site for posting and discussing artworks
