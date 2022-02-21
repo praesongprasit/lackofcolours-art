@@ -1,0 +1,29 @@
+[[redirects]]
+from = "http://lackofcolours.netlify.app/*"
+to = "https://lackofcolours.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://lackofcolours.netlify.app/*"
+to = "https://lackofcolours.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "http://www.lackofcolours.netlify.app/*"
+to = "https://lackofcolours.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.lackofcolours.netlify.app/*"
+to = "https://lackofcolours.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "/index.html"
+to = "/"
+status = 301
+force = true
